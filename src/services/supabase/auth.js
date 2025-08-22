@@ -41,13 +41,17 @@ export const authService = {
         }
     },
 
-    async singOut(){
-        const {error} = await supabase.auth.singOut()
-        return {error}
+    async singOut() {
+        const {
+            error
+        } = await supabase.auth.singOut()
+        return {
+            error
+        }
     },
 
-    async onAuthStateChange(callbak){
-        return  supabase.auth.onAuthStateChange(callbak)
+    async onAuthStateChange(callbak) {
+        return supabase.auth.onAuthStateChange(callbak)
     }
 
 
