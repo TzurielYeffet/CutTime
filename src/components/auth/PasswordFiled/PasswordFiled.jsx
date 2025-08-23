@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { passwordValidation } from "../../../utils/validations/passwordValidation.js";
+import "AuthFiled.css"
 
 export function PasswordFiled({value,onChange}){
    const [rules,setRules] = useState({});
@@ -21,7 +22,7 @@ export function PasswordFiled({value,onChange}){
              placeholder="Password"
              required
              ></input>
-            <ul className="password-rules">
+            <ul className="rules">
                 {Object.entries(rules).map(([rule,{valid,message}])=>
                 (<li key={rule} className={valid? "valid":"invalid"}>
                     {message}
