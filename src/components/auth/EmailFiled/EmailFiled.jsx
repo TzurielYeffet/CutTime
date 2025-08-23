@@ -1,6 +1,6 @@
 import { useState } from "react";
 import {emailValidation} from "../../../utils/validations/emailValidation.js"
-import "AuthFiled.css"
+import "../AuthFiled.css"
 export function EmailField({value,onChange}){
     const [isValid,setIsValid] = useState({valid:false,rules:{}})
     function handleChange(event){

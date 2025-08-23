@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { passwordValidation } from "../../../utils/validations/passwordValidation.js";
-import "AuthFiled.css"
+import "../AuthFiled.css"
 
 export function PasswordFiled({value,onChange}){
    const [rules,setRules] = useState({});
